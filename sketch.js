@@ -31,6 +31,7 @@ var imageNetCollage;
 var dortmund1;
 var dortmund2;
 var dortmund3;
+var imageNetBiasText;
 var imageNetLogo;
 var crawfordText1;
 var crawfordText2;

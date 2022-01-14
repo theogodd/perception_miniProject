@@ -49,7 +49,7 @@ function preload()
     dortmund1 = loadImage('assets/dortmund1.jpg');
     dortmund2 = loadImage('assets/dortmund2.jpg');
     dortmund3 = loadImage('assets/dortmund3.jpg');
-    imageNetBiasText loadImage('assets/ImageNetBiasText.jpg');
+    imageNetBiasText = loadImage('assets/ImageNetBiasText.jpg');
     imageNetLogo = loadImage('assets/ImageNetLogo.jpg');
     crawfordText1 = loadImage('assets/crawfordText1.jpg');
     crawfordText2 = loadImage('assets/crawfordText2.jpg');

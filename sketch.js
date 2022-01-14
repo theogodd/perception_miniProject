@@ -41,19 +41,19 @@ var crawfordText3;
 function preload()
 {
     //preload assets used throughout
-    gaze = loadImage('assets/columbiaGaze.jpg');
-    dataSetFace = loadImage('assets/dataSetFace.jpg');
+    gaze = loadImage("assets/columbiaGaze.jpg");
+    dataSetFace = loadImage("assets/dataSetFace.jpg");
     hooligan = loadImage("assets/hooligan.jpg");
-    mugShot2 = loadImage('assets/mugShot2.jpg');
-    imageNetCollage = loadImage('assets/imageNetCollage.jpg');
-    dortmund1 = loadImage('assets/dortmund1.jpg');
-    dortmund2 = loadImage('assets/dortmund2.jpg');
-    dortmund3 = loadImage('assets/dortmund3.jpg');
-    imageNetBiasText = loadImage('assets/ImageNetBiasText.jpg');
-    imageNetLogo = loadImage('assets/ImageNetLogo.jpg');
-    crawfordText1 = loadImage('assets/crawfordText1.jpg');
-    crawfordText2 = loadImage('assets/crawfordText2.jpg');
-    crawfordText3 = loadImage('assets/crawfordText3.jpg');
+    mugShot2 = loadImage("assets/mugShot2.jpg");
+    imageNetCollage = loadImage("assets/imageNetCollage.jpg");
+    dortmund1 = loadImage("assets/dortmund1.jpg");
+    dortmund2 = loadImage("assets/dortmund2.jpg");
+    dortmund3 = loadImage("assets/dortmund3.jpg");
+    imageNetBiasText = loadImage("assets/ImageNetBiasText.jpg");
+    imageNetLogo = loadImage("assets/ImageNetLogo.jpg");
+    crawfordText1 = loadImage("assets/crawfordText1.jpg");
+    crawfordText2 = loadImage("assets/crawfordText2.jpg");
+    crawfordText3 = loadImage("assets/crawfordText3.jpg");
 }
 
 function setup()

@@ -23,19 +23,32 @@ var crawfordText3;
 
 var textScroll = 720;
 
+var gaze;
+var dataSetFace;
+var hooligan;
+var mugShot2;
+var imageNetCollage;
+var dortmund1;
+var dortmund2;
+var dortmund3;
+var imageNetLogo;
+var crawfordText1;
+var crawfordText2;
+var crawfordText3;
+
+
 function preload()
 {
     //preload assets used throughout
     gaze = loadImage('assets/columbiaGaze.jpg');
     dataSetFace = loadImage('assets/dataSetFace.jpg');
     hooligan = loadImage("assets/hooligan.jpg");
-    mugShot1 = loadImage('assets/mugShot1.jpg');
     mugShot2 = loadImage('assets/mugShot2.jpg');
     imageNetCollage = loadImage('assets/imageNetCollage.jpg');
     dortmund1 = loadImage('assets/dortmund1.jpg');
     dortmund2 = loadImage('assets/dortmund2.jpg');
     dortmund3 = loadImage('assets/dortmund3.jpg');
-    imageNetBiasText = loadImage('assets/ImageNetBiasText.jpg');
+    imageNetBiasText loadImage('assets/ImageNetBiasText.jpg');
     imageNetLogo = loadImage('assets/ImageNetLogo.jpg');
     
     crawfordText1 = loadImage('assets/crawfordText1.jpg');
@@ -49,14 +62,14 @@ function setup()
     canvas.id('canvas');
     
     //attempt to reduce buffer
-    pixelDensity(0.5)
+    pixelDensity(0.5);
     if(gamestate < 6)
     {   
         frameRate(10);
     }
     else
     {
-    frameRate(20)
+    frameRate(20);
     }
     
     video = createCapture(VIDEO);
@@ -234,7 +247,7 @@ function userInstruction()
     // instruction to the user to come up before the face detection starts
     if(frameCount < 50 && boxDrawn == false && gamestate < 6)
     {
-        let y = 680
+        let y = 680;
         mirror();
         textSize(50);
         textAlign(CENTER);
@@ -349,7 +362,7 @@ function imageNetText_function()
     if(imageNetCollage_boolean == true && gamestate < 6)
     {
         mirror();   
-        textSize(30)
+        textSize(30);
         textAlign(CENTER); 
         
         text("ImageNet was set up in the 2000s aiming to expand the data available to AI algorithms. Over 20 000 categories are used to classify images pulled from various locations. some are objective CAR, SPANNER, while others are subjective and lead to ambiguity causing a deep rooted bias that is then entrenched into all machine learning systems that derive from it.      'ImageNet Roulette' revealed the extent to this problem when people could upload selfies to be categorised by the program. Several players on the Borussia Dortmund football squad were entered in: some came back categorised as things like 'NONSMOKER' while serious claims were made on others, like 'RAPE SUSPECT'. The internalised racism in this system is obvious. Dan-Axel Zagadou was hightlighted as a 'WRONGDOER [and] OFFENDER'. This Bias should not just be seen as an error within imageNet but rather a fault in the way we think about classification and the training of AI systems. Within the tech industry there is a disregard for ethics as a trade-off for simplifying developments and rushing processes in order to please shareholders and consumers.", width/1.5, textScroll, width/4);
@@ -383,7 +396,7 @@ function lastSection()
         blendMode(BLEND);
         
         // using the sinosoidal method do implement the movement of the kate crawford text - each move at a different speed related to the division of PI
-        var progress = (frameCount % 1000) / 250
+        var progress = (frameCount % 1000) / 250;
         var sinInterp1 = sin(progress * (PI / 1));
         var sinInterp2 = sin(progress * (PI / 2)); 
         var sinInterp3 = sin(progress * (PI / 4));    
